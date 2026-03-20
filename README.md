@@ -82,7 +82,7 @@ prisma/
 1. **Clone and navigate to server directory**
 
 ```bash
-cd assaignment-4-server
+cd Food-Server-Final
 ```
 
 2. **Install dependencies**
