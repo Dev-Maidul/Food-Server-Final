@@ -1,0 +1,10 @@
+model OrderItem {
+  id       String @id @default(uuid())
+  orderId  String
+  mealId   String
+  price    Float
+  quantity Int
+
+  order Order @relation(fields: [orderId], references: [id])
+  meal  Meal  @relation(fields: [mealId], references: [id])
+}

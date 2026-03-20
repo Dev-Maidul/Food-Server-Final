@@ -1,0 +1,23 @@
+model Meal {
+  id          String          @id @default(uuid())
+  providerId  String
+  categoryId  String
+  name        String
+  description String?
+  price       Float
+  image       String?
+  isAvailable Boolean         @default(true)
+  calories    Int
+  ingredients String[]        @default([])
+  cuisine     String?
+  dietary     String[]        @default([])
+  mealType    String?
+  spiceLevel  String?
+  provider    ProviderProfile @relation(fields: [providerId], references: [id])
+  category    Category        @relation(fields: [categoryId], references: [id])
+  reviews     Review[]
+  orderItems  OrderItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
