@@ -9,11 +9,6 @@ const router = express.Router();
 router.get("/", ProviderController.getAllProviders);
 
 router.get("/:id", ProviderController.getProviderById);
-router.post(
-  "/",
-  authMiddleware(UserRole.provider),
-  validateRequest(ProviderValidation.createProviderProfileZodSchema),
-  ProviderController.createProviderProfile,
-);
+
 
 export const ProviderRoutes = router;
