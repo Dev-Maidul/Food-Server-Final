@@ -262,9 +262,6 @@ npx prisma generate
 4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Open Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ## 👨‍💻 Developer
 
