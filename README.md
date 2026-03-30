@@ -272,4 +272,3 @@ Developed by [Md Maidul Islam]
 
 ---
 
-**Note:** This is the backend API for the FoodHub project. See the frontend repository for the complete application.
