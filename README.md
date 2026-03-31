@@ -5,8 +5,8 @@ Backend API for FoodHub - A multi-vendor food delivery platform built with Node.
 # Credentials for Testing
 
 - **Admin**
-  - Email:admin@gmail.com
-  - Password:admin@123
+  ADMIN_EMAIL=admin@gmail.com
+ADMIN_PASSWORD=Admin@123
 
 - **Provider**
   - Email:provider@gmail.com
